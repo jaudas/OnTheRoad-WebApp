@@ -1640,16 +1640,16 @@
 	#banner-wrapper {
 		position: relative;
 		background-image: url("../images/fullscreen.jpg"), url("images/overlay.png"), url("../../images/banner.jpg");
-		background-position: top left, top left, center center;
-		background-repeat: repeat, repeat, no-repeat;
-		background-size: auto, auto, cover;
+		background-position:center;
+		background-repeat: no-repeat;
+		background-size: cover;
 		z-index: 1;
 	}
 
 	#main-wrapper {
 		background: #fff;
 		border-top: solid 5px #b1ddab;
-		border-bottom: solid 5px #c1cac5;
+
 	}
 
 /* Banner */
@@ -1657,8 +1657,8 @@
 	#banner {
 		position: relative;
 		background-color: rgba(21, 28, 23, 0.85);
-		background-image: url("images/overlay.png"), url("images/highlight.png");
-		background-position: top left, center center;
+		/*background-image: url("images/overlay.png"), url("images/highlight.png");
+		*/background-position: top left, center center;
 		background-size: auto, 100% 250%;
 		background-repeat: repeat, no-repeat;
 		text-align: center;
@@ -1705,8 +1705,14 @@
 		color: inherit;
 	}
 
+
 	#footer h2.major span {
 		background: #f2f5f3;
+	}
+
+	.border-footer{
+		background-color: #798081;
+		padding-top: 5px !important;
 	}
 
 /* Copyright */
@@ -2439,11 +2445,12 @@
 					padding: 2em 0 2em 0;
 				}
 
-		/* Footer */
 
 			#footer {
 				padding: 4em 20px 2em 20px;
+			
 			}
+
 
 				#footer > .row {
 					padding: 1em 0 1em 0;
