@@ -24,6 +24,14 @@ OTR.config(function ($routeProvider) {
         templateUrl : 'app/views/blog.html',
         controller : ''
       })
+      .when('/manage-offers',{
+        templateUrl : 'app/views/manage-offers.html',
+        controller : 'ManageOffersCtrl'
+      })
+      .when('/new-offer',{
+        templateUrl : 'app/views/new-offer.html',
+        controller : 'NewOfferCtrl'
+      })
       .otherwise({ //page d'erreur sympatique
         templateUrl: 'app/views/404.html',
       });
