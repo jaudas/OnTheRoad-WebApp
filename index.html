@@ -47,17 +47,19 @@
 						<li><a href="#/login">Se connecter</a></li>
 						<li><a href="#/manage-offers">Gérer mes offres</a></li>
 
-						
+
 					</ul>
 				</nav>
 
 
 			<!--  Contenu  -->
-				<div ng-view=""></div>
+				<div id="main-wrapper">
+					<div ng-view=""></div>
 
+				</div>
 			<!-- Footer -->
 				<ng-include src="'app/views/footer.html'"></ng-include>			
-			</div>
+
 
 		<!-- Scripts -->
 

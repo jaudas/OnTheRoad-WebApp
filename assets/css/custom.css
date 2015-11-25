@@ -46,3 +46,39 @@
 
     padding: 10% 20%;
 }
+
+
+
+#manage-offers{
+    background-color: white;
+    padding: 5%;
+}
+
+
+#POI{
+    border-top: 2px solid gray;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+
+}
+
+#offers{
+    padding-bottom : 20px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#create-new{
+    float: left;
+}
+
+
+@media (min-width: 1280px){
+    #manage-offers{
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+} 

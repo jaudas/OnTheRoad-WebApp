@@ -22,6 +22,10 @@
 		display: block;
 	}
 
+	footer{
+		background-color: #f2f5f3;
+	}
+
 	body {
 		line-height: 1;
 	}
@@ -1895,7 +1899,7 @@
 			}
 
 			#main-wrapper {
-				border-top-width: 35px;
+				border-top-width: 12px;
 				border-bottom-width: 10px;
 			}
 
