@@ -36,6 +36,10 @@
     max-width: 400px;
 }
 
+.input-group{
+	width: 100%;
+}
+
 .form-group{
     padding: 1%;
 }
@@ -54,6 +58,14 @@
 
 .padding5{
     padding: 5%;
+}
+
+.mt30{
+	margin-top: 30px;
+}
+
+.mt50{
+	margin-top: 50px;
 }
 
 #TOS{

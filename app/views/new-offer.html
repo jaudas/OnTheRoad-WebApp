@@ -1,58 +1,65 @@
 <div id="new-offer" class="container">
-	<div class="row">
-		<div class="realcontent">
-			<h2>Poster une offre</h2>
-			
-			<div class="general-row">
-				<form id="new-offerForm" accept-charset="UTF-8" action="#hahaha" method="POST">
-					<div class="input-group">
-						<label for="name">Nom de l'offre :</label>
-						<input id="" class="form-control" type="text" value="" name="name" maxlength="20" required="required" placeholder="Nom">
+	<div class="realcontent">
+		<h2 class="mt50">Poster une offre</h2>
+		
+		<div class="general-row">
+			<form id="new-offerForm" accept-charset="UTF-8" action="#hahaha" method="POST">
+				<div class="input-group mt30">
+					<label for="name">Nom de l'offre :</label>
+					<input id="" class="form-control" type="text" value="" name="name" maxlength="20" required="required" placeholder="Nom">
+				</div>
+				<div class="row">
+					<div class="col-md-4 col-xs-12">
+						<div class="input-group mt30">
+							<label for="select">Type d'offre :</label>
+							<select id="" class="form-control selectpicker">
+								<option value="">1</option>
+								<option value="">2</option>
+								<option value="">3</option>
+								<option value="">4</option>
+							</select>
+						</div>
 					</div>
-					<div class="input-group">
-						<label for="select">Type d'offre :</label>
-						<select id="" class="form-control selectpicker" multiple>
-							<option value="">1</option>
-							<option value="">2</option>
-							<option value="">3</option>
-							<option value="">4</option>
-						</select>
+					<div class="col-md-4 col-xs-12">
+						<div class="input-group mt30">
+							<label for="name">Date de début de l'offre :</label>
+							<input class="form-control datepicker" type="text" value="" name="date-begin" required="required" placeholder="Date de début">
+						</div>
 					</div>
-					<div class="input-group">
-						<label for="name">Date de début de l'offre :</label>
-						<input class="form-control datepicker" type="text" value="" name="date-begin" required="required" placeholder="Date de début">
+					<div class="col-md-4 col-xs-12">
+						<div class="input-group mt30">
+							<label for="name">Date de fin de l'offre :</label>
+							<input class="form-control datepicker" type="text" value="" name="date-end" required="required" placeholder="Date de fin">
+						</div>
 					</div>
-					<div class="input-group">
-						<label for="name">Date de fin de l'offre :</label>
-						<input class="form-control datepicker" type="text" value="" name="date-end" required="required" placeholder="Date de fin">
-					</div>
-					<div class="input-group">
-						<label for="select">Points de ventes de l'offre :</label>
-						<select id="" class="form-control selectpicker" multiple>
-							<option value="">1</option>
-							<option value="">2</option>
-							<option value="">3</option>
-							<option value="">4</option>
-						</select>
-					</div>
-					<div class="input-group">
-						<label for="name">Description de l'offre :</label>
-						<textarea id="" class="form-control" type="text" value="" name="description" maxlength="100" required="required" placeholder="Description"></textarea>
-					</div>
-					<div class="form-group">
-						<button id="btn-new-offer" class="btn btn-block btn-lg" type="submit">Poster mon offre</button>
-					</div>
-				</form>
-			</div>
+				</div>
+				<div class="input-group mt30">
+					<label for="select">Points de ventes de l'offre :</label>
+					<select id="" class="form-control selectpicker" multiple>
+						<option value="">1</option>
+						<option value="">2</option>
+						<option value="">3</option>
+						<option value="">4</option>
+					</select>
+				</div>
+				<div class="input-group mt30">
+					<label for="name">Description de l'offre :</label>
+					<textarea id="" class="form-control" type="text" value="" name="description" maxlength="100" required="required" placeholder="Description"></textarea>
+				</div>
+				<div class="form-group mt30">
+					<button id="btn-new-offer" class="btn btn-block btn-lg" type="submit">Poster mon offre</button>
+				</div>
+				</div>
+			</form>
 		</div>
-		<script type="text/javascript">
-			// When the document is ready
-			$(document).ready(function () {
-				$('.datepicker').datepicker({
-					format: "dd/mm/yyyy"
-				});  
-			});
-		</script>
 	</div>
+	<script type="text/javascript">
+		// When the document is ready
+		$(document).ready(function () {
+			$('.datepicker').datepicker({
+				format: "dd/mm/yyyy"
+			});  
+		});
+	</script>
 	
 </div>
