@@ -1,4 +1,4 @@
-var OTR = angular.module('OTR', ['ngRoute']);
+var OTR = angular.module('OTR', ['ngRoute','ngResource']);
 
 OTR.config(function ($routeProvider) {
     //Cette config permet de  diriger le ng-view entre les pages
@@ -40,3 +40,5 @@ OTR.config(function ($routeProvider) {
         templateUrl: 'app/views/404.html',
       });
 });
+
+
