@@ -1,4 +1,4 @@
-OTR.controller("SignupCtrl", function($scole, $http{
+OTR.controller("SignupCtrl", function($scole, $http){
 
 
 

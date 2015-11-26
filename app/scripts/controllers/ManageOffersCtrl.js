@@ -1,4 +1,4 @@
-OTR.controller("ManageOffersCtrl", function($scole, $http{
+OTR.controller("ManageOffersCtrl", function($scole, $http){
 
 
 
