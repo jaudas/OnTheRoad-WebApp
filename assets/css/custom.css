@@ -1,26 +1,30 @@
+.general-row{
+    margin: 0 auto;
+    display: inline-block;
+    max-width: 700px;
+}
+
+.realcontent{
+    width: 100%;
+    text-align: center;
+}
+
 .notfound{
 	display: block;
 	position: relative;
 	text-align: center;
-
     margin-left: auto;
     margin-right: auto;
-
     padding-bottom: 1%;
     padding-top: 1%;
-
     background-color: #DCDCDC;
 }
-
 
 .login{
 	text-align: center;
 	position: center;
     background-color: white;
-    
     padding-bottom: 5%;
-
-
 }
 
 .login-form{
@@ -28,32 +32,44 @@
     margin-left: auto;
     margin-right: auto;
     display: block;
-
     padding: 1%;
-
     max-width: 400px;
+}
 
+.form-group{
+    padding: 1%;
+}
+
+.fl{
+	float: left;
+}
+
+.fr{
+	float: right;
+}
+
+.db{
+	display: block;
+}
+
+.padding5{
+    padding: 5%;
 }
 
 #TOS{
     background-color: white;
-
     padding: 10% 20%;
 }
 
 #blog{
     background-color: white;
-
     padding: 10% 20%;
 }
-
-
 
 #manage-offers{
     background-color: white;
     padding: 5%;
 }
-
 
 #POI{
     border-top: 2px solid gray;
@@ -61,7 +77,6 @@
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 10px;
-
 }
 
 #offers{
@@ -75,10 +90,45 @@
     float: left;
 }
 
-
 @media (min-width: 1280px){
     #manage-offers{
         padding-right: 10%;
         padding-left: 10%;
     }
-} 
+}
+
+/* get font-awesome to work with BS3 */
+.input-group-addon .icon-2x {
+    width: 28px;
+    min-width: 28px;
+    display: inline-block;
+}
+
+.inline-block > li {
+    position: relative;
+    display: inline-block;
+    margin: 0 10px 10px 0;
+}
+
+/* ----- SIGN UP ----- */
+.well h3 {
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+#signupForm .input-group {
+    margin-bottom: 20px;
+}
+
+#signup{
+    text-align: center;
+    background-color: white;
+    margin: 0;
+    width: auto;
+    padding : 1%;
+}
+
+#signup h1{
+    font-size: 30px;
+}

@@ -32,6 +32,10 @@ OTR.config(function ($routeProvider) {
         templateUrl : 'app/views/new-offer.html',
         controller : 'NewOfferCtrl'
       })
+	  .when('/new-POI',{
+        templateUrl : 'app/views/new-POI.html',
+        controller : 'NewPOICtrl'
+      })
       .otherwise({ //page d'erreur sympatique
         templateUrl: 'app/views/404.html',
       });
