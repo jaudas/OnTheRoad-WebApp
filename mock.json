@@ -1,0 +1,81 @@
+{
+	"POI": [
+	{
+		"id": "1",
+		"description": "Magasin de vetements",
+		"type" : "restaurant",
+		"CP" : "92 340"
+	},
+
+	{
+		"id": "2",
+		"description": "Magasin de vetements",
+		"type" : "restaurant",
+		"CP" : "92 340"
+	},
+
+	{
+		"id": "3",
+		"description": "Magasin de vetements",
+		"type" : "restaurant",
+		"CP" : "92 340"
+	},
+
+	{
+		"id": "4",
+		"description": "Magasin de vetements",
+		"type" : "restaurant",
+		"CP" : "92 340"
+	},
+
+	{
+		"id": "5",
+		"description": "Magasin de vetements",
+		"type" : "restaurant",
+		"CP" : "92 340"
+	},
+
+	{
+		"id": "6",
+		"description": "Magasin de vetements",
+		"type" : "station essence",
+		"CP" : "92 340"
+	}
+
+	],
+
+	"offers": [
+	{
+		"id": "1",
+		"date_fin" : "1450177827",
+		"description": "Super promo sur les chips.",
+		"promotion": " - 50 % ",
+		"POI" : []
+	},
+
+	{
+		"id": "2",
+		"date_fin" : "1450177827",
+		"description": "Super promo sur les frites.",
+		"promotion": " 1 achetée - 1 offerte ! ",
+		"POI" : []
+	},
+
+	{
+		"id": "3",
+		"date_fin" : "1450177827",
+		"description": "Super promo sur les pizzas.",
+		"promotion": "promotion 3",
+		"POI" : []
+	},
+
+	{
+		"id": "4",
+		"date_fin" : "1450177827",
+		"description": "Super promo sur les chips.",
+		"promotion": "promotion 4",
+		"POI" : []
+	}
+
+	]
+}

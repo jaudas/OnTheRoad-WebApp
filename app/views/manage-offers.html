@@ -1,5 +1,30 @@
 <div id="manage-offers">
 
+	<div class = "overview">
+		<h2>MON COMPTE </h2>
+		<div class="col-md-6 " id= "summary">
+			<div class = "summary_offres">
+				4 offres en cours.
+			</br>
+			</div>
+
+			<div class = "summary_POI">
+				1 point de vente.
+				</br>
+			</div>
+
+			80% de popularité</br>
+			
+
+		</div>
+		<div class = class="col-md-6 " id = "maps">
+			<img src="assets/images/maps.png">
+
+		</div>
+	</div>
+
+
+
 	<div id="offers">
 		<div class="row">
 			<h2>Mes Offres</h2>
@@ -8,7 +33,26 @@
 			</div>
 		</div>
 		<div class="row" style="text-align:center;">
-			Liste des offres et co.
+			<div ng-repeat = "offre in offers.offers | limitTo:50 " >
+				<div class = "offre">
+					<div class = "desc_offre">
+					
+						<div class = "titre_offre"> 
+							{{offre.promotion}}
+						</div>
+						<div>
+							<p class="detail_offre"> {{offre.description}}
+								</br>valide jusqu'au : {{offre.date_fin}}
+							</p>
+						</div>
+
+					</div>
+					<div class = "share_offre">
+						Partager <i class="fa fa-facebook-square"></i> - <i class="fa fa-twitter"></i>
+					</div>
+
+				</div> 
+			</div>
 		</div>
 	</div>
 	
@@ -20,7 +64,27 @@
 			</div>
 		</div>
 		<div class="row" style="text-align:center;">
-			Liste des magasins et co.
+			<div ng-repeat = "POI in offers.POI | limitTo:50 " >
+				<div class = "offre">
+					<div class = "desc_offre">
+					
+						<div class = "titre_offre"> 
+							{{POI.type}}
+						</div>
+						<div>
+							<p class="detail_offre"> {{POI.description}}
+							</br> Lieu : {{POI.CP}}
+							</br> Valide jusqu'au : {{POI.date_fin}}
+							</p>
+						</div>
+
+					</div>
+					<div class = "share_offre">
+						Partager <i class="fa fa-facebook-square"></i> - <i class="fa fa-twitter"></i>
+					</div>
+
+				</div> 
+			</div>
 		</div>
 	</div>
 
