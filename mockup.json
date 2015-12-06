@@ -4,42 +4,55 @@
 		"id": "1",
 		"description": "Magasin de vetements",
 		"type" : "restaurant",
-		"CP" : "92 340"
+		"CP" : "92 340",
+		"latitude" : 48,
+		"longitude" : 3
+
 	},
 
 	{
 		"id": "2",
 		"description": "Magasin de vetements",
 		"type" : "restaurant",
-		"CP" : "92 340"
+		"CP" : "92 340",
+		"latitude" : 49,
+		"longitude" : 3
 	},
 
 	{
 		"id": "3",
 		"description": "Magasin de vetements",
 		"type" : "restaurant",
-		"CP" : "92 340"
+		"CP" : "92 340",
+		"latitude" : 49,
+		"longitude" : 2
 	},
 
 	{
 		"id": "4",
 		"description": "Magasin de vetements",
 		"type" : "restaurant",
-		"CP" : "92 340"
+		"CP" : "92 340",
+		"latitude" : 50,
+		"longitude" : 3
 	},
 
 	{
 		"id": "5",
 		"description": "Magasin de vetements",
 		"type" : "restaurant",
-		"CP" : "92 340"
+		"CP" : "92 340",
+		"latitude" : 49,
+		"longitude" : 1
 	},
 
 	{
 		"id": "6",
 		"description": "Magasin de vetements",
 		"type" : "station essence",
-		"CP" : "92 340"
+		"CP" : "92 340",
+		"latitude" : 48,
+		"longitude" : 1
 	}
 
 	],
@@ -47,7 +60,7 @@
 	"offers": [
 	{
 		"id": "1",
-		"date_fin" : "1450177827",
+		"date_fin" : "1288323623006",
 		"description": "Super promo sur les chips.",
 		"promotion": " - 50 % ",
 		"POI" : []

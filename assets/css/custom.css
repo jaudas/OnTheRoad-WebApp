@@ -79,7 +79,7 @@
 }
 
 #manage-offers{
-    background-color: #DCDCDC;
+    background-color: #E7E9EC;
     padding: 5%;
 }
 
@@ -163,7 +163,7 @@
     width: 100%;
     vertical-align: middle;
     border-top : 1px solid #E0E0E0;
-    font-size: 18px;
+    font-size: 26px;
 }
 
 .titre_offre{
@@ -185,9 +185,13 @@
     background-color: white;
 
     margin-bottom: 15px;
-    padding: 10px 10px;
+    padding: 20px 20px;
 
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.20);
+}
+
+.overview h2{
+    text-align: center;
 }
 
 #summary{
@@ -202,4 +206,14 @@
     margin-bottom: 15px;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.20);
 
+}
+
+
+.map-container { 
+    height: 400px; 
+}
+
+
+.angular-google-map-container { 
+    height: 400px; 
 }

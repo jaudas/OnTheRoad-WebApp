@@ -1,4 +1,4 @@
-var OTR = angular.module('OTR', ['ngRoute','ngResource']);
+var OTR = angular.module('OTR', ['ngRoute','ngResource', 'uiGmapgoogle-maps']);
 
 OTR.config(function ($routeProvider) {
     //Cette config permet de  diriger le ng-view entre les pages

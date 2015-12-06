@@ -1,91 +1,106 @@
 <div id="manage-offers">
 
 	<div class = "overview">
-		<h2>MON COMPTE </h2>
 		<div class="col-md-6 " id= "summary">
+
+			<h2> MES INFOS </h2>
 			<div class = "summary_offres">
 				4 offres en cours.
 			</br>
-			</div>
-
-			<div class = "summary_POI">
-				1 point de vente.
-				</br>
-			</div>
-
-			80% de popularité</br>
-			
-
 		</div>
-		<div class = class="col-md-6 " id = "maps">
-			<img src="assets/images/maps.png">
 
-		</div>
+		<div class = "summary_POI">
+			1 point de vente.
+		</br>
 	</div>
 
+	80% de popularité</br>
 
 
-	<div id="offers">
-		<div class="row">
-			<h2>Mes Offres</h2>
-			<div class="create-new">
-				<a class="waves-effect waves-light btn" href ="#/new-offer"><i class="fa fa-plus"></i> Publier une Offre</a>
-			</div>
+</div>
+<div class = class="col-md-6" >
+
+	<h2> MES POINTS DE VENTE </h2>
+	<!--<map class = "map-container" ng-transclude class="short-map" center="map.center" zoom="map.zoom" options="map.options"> 
+		<points coords="points.coords" options="points.options" events="points.events" decimals="points.decimals"></points>
+	</map>
+
+	{{points}}-->
+
+	<ui-gmap-google-map center='map.center' zoom='map.zoom'>
+
+        <ui-gmap-markers models="markers" coords="'self'" icon="'icon'">
+        </ui-gmap-markers>
+
+	</ui-gmap-google-map>
+
+
+</div>
+</div>
+
+
+
+<div id="offers">
+	<div class="row">
+		<h2>Mes Offres</h2>
+		<div class="create-new">
+			<a class="waves-effect waves-light btn" href ="#/new-offer"><i class="fa fa-plus"></i> Publier une Offre</a>
 		</div>
-		<div class="row" style="text-align:center;">
-			<div ng-repeat = "offre in offers.offers | limitTo:50 " >
-				<div class = "offre">
-					<div class = "desc_offre">
+	</div>
+	<div class="row" style="text-align:center;">
+		<div ng-repeat = "offre in offers.offers | limitTo:50 " >
+			<div class = "offre">
+				<div class = "desc_offre">
 					
-						<div class = "titre_offre"> 
-							{{offre.promotion}}
-						</div>
-						<div>
-							<p class="detail_offre"> {{offre.description}}
-								</br>valide jusqu'au : {{offre.date_fin}}
-							</p>
-						</div>
-
+					<div class = "titre_offre"> 
+						{{offre.promotion}}
 					</div>
-					<div class = "share_offre">
-						Partager <i class="fa fa-facebook-square"></i> - <i class="fa fa-twitter"></i>
-					</div>
+					<div>
+						<p class="detail_offre"> {{offre.description}}
+						</br>valide jusqu'au : {{offre.date_fin}}
+					</p>
+				</div>
 
-				</div> 
 			</div>
+			<div class = "share_offre">
+				Partager <i class="fa fa-facebook-square"></i> - <i class="fa fa-twitter"></i>
+			</div>
+
+		</div> 
+	</div>
+</div>
+</div>
+
+<div id="POI">
+	<div class="row">
+		<h2>Mes Points de vente</h2>
+		<div class="create-new">
+			<a href="#/new-POI"><i class="fa fa-plus"></i> Ajouter un Point de vente </a>
 		</div>
 	</div>
-	
-	<div id="POI">
-		<div class="row">
-			<h2>Mes Points de vente</h2>
-			<div class="create-new">
-				<a href="#/new-POI"><i class="fa fa-plus"></i> Ajouter un Point de vente </a>
-			</div>
-		</div>
-		<div class="row" style="text-align:center;">
-			<div ng-repeat = "POI in offers.POI | limitTo:50 " >
-				<div class = "offre">
-					<div class = "desc_offre">
+	<div class="row" style="text-align:center;">
+		<div ng-repeat = "POI in offers.POI | limitTo:50 " >
+			<div class = "offre">
+				<div class = "desc_offre">
 					
-						<div class = "titre_offre"> 
-							{{POI.type}}
-						</div>
-						<div>
-							<p class="detail_offre"> {{POI.description}}
-							</br> Lieu : {{POI.CP}}
-							</br> Valide jusqu'au : {{POI.date_fin}}
-							</p>
-						</div>
-
+					<div class = "titre_offre"> 
+						{{POI.type}}
 					</div>
-					<div class = "share_offre">
-						Partager <i class="fa fa-facebook-square"></i> - <i class="fa fa-twitter"></i>
-					</div>
-
-				</div> 
+					<div>
+						<p class="detail_offre"> {{POI.description}}
+						</br> Lieu : {{POI.CP}}
+					</br> Valide jusqu'au : {{POI.date_fin}}
+				</p>
 			</div>
+
 		</div>
-	</div>
+		<div class = "share_offre">
+			Partager <i class="fa fa-facebook-square"></i> - <i class="fa fa-twitter"></i>
+		</div>
+
+	</div> 
+</div>
+</div>
+</div>
 
 </div>
