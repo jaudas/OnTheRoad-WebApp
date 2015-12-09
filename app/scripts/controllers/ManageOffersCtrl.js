@@ -60,7 +60,7 @@ OTR.controller("ManageOffersCtrl", function($scope, $http){
 			$scope.isLoading = false;
 
 
-			for (var iter = 0; iter < data.POI.length; iter++) {
+		/*	for (var iter = 0; iter < data.POI.length; iter++) {
 
 				markers.push(
 					{
@@ -73,7 +73,7 @@ OTR.controller("ManageOffersCtrl", function($scope, $http){
 				
 
 			}
-			console.info($scope.markers);
+			console.info($scope.markers);*/
 
 		})
 		.error(function(data,status)
