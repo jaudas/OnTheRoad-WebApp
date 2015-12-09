@@ -1,42 +1,40 @@
 <div id="new-POI" class="container">
-	<div class="row">
-		<div class="realcontent">
-			<h2>Nouveau Point de Vente</h2>
-			
-			<div class="general-row">
-				<form id="new-offerForm" accept-charset="UTF-8" action="#hahaha" method="POST">
-					<div class="input-group">
-						<label for="name">Nom de l'offre :</label>
-						<input id="" class="form-control" type="text" value="" name="name" maxlength="20" required="required" placeholder="Nom">
-					</div>
-					<div class="input-group">
-						<label for="select">Type d'offre :</label>
-						<select id="" class="form-control selectpicker" multiple>
-							<option value="">1</option>
-							<option value="">2</option>
-							<option value="">3</option>
-							<option value="">4</option>
-						</select>
-					</div>
-					<div class="input-group">
-						<label for="select">Points de ventes de l'offre :</label>
-						<select id="" class="form-control selectpicker" multiple>
-							<option value="">1</option>
-							<option value="">2</option>
-							<option value="">3</option>
-							<option value="">4</option>
-						</select>
-					</div>
-					<div class="input-group">
-						<label for="name">Description de l'offre :</label>
-						<textarea id="" class="form-control" type="text" value="" name="description" maxlength="100" required="required" placeholder="Description"></textarea>
-					</div>
-					<div class="form-group">
-						<button id="btn-new-offer" class="btn btn-block btn-lg" type="submit">Ajouter mon Point de vente</button>
-					</div>
-				</form>
-			</div>
-			
+	<div class="realcontent">
+		<h2 class="mt50">Nouveau Point de Vente</h2>
+		
+		<div class="general-row">
+			<form id="new-POIForm" method="POST" action="#hahaha" accept-charset="UTF-8">
+				<div class="input-group">
+					<label for="name">Nom du point de vente :</label>
+					<input id="name" class="form-control" placeholder="Nom" type="text" value="" name="name" maxlength="20" required="required">
+				</div>
+				<div class="input-group">
+					<label for="address">Adresse du point de vente :</label>
+					<input id="address" class="form-control" placeholder="Adresse" type="text" value="" name="address" maxlength="50" required="required">
+				</div>
+				<div class="input-group">
+					<label for="postcode">Code postal du point de vente :</label>
+					<input id="postcode" class="form-control" placeholder="Code postal" type="text" value="" name="postcode" maxlength="20" required="required">
+				</div>
+				
+				<div class="input-group">
+					<label for="select">Type d'offre :</label>
+					<select id="" class="form-control selectpicker" multiple>
+						<option value="">1</option>
+						<option value="">2</option>
+						<option value="">3</option>
+						<option value="">4</option>
+					</select>
+				</div>
+				<div class="input-group">
+					<label for="name">Description de l'offre :</label>
+					<textarea id="" class="form-control" type="text" value="" name="description" maxlength="100" required="required" placeholder="Description"></textarea>
+				</div>
+				<div class="form-group mt30 mb50">
+					<button id="btn-new-offer" class="btn btn-block btn-lg" type="submit">Ajouter mon Point de vente</button>
+				</div>
+			</form>
 		</div>
+		
 	</div>
 </div>

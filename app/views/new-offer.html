@@ -3,16 +3,16 @@
 		<h2 class="mt50">Poster une offre</h2>
 		
 		<div class="general-row">
-			<form id="new-offerForm" accept-charset="UTF-8" action="#hahaha" method="POST">
-				<div class="input-group mt30">
+			<form id="new-offerForm" method="POST" action="#hahaha" accept-charset="UTF-8">
+				<div class="input-group">
 					<label for="name">Nom de l'offre :</label>
-					<input id="" class="form-control" type="text" value="" name="name" maxlength="20" required="required" placeholder="Nom">
+					<input id="name" class="form-control" placeholder="Nom" type="text" value="" name="name" maxlength="20" required="required">
 				</div>
 				<div class="row">
 					<div class="col-md-4 col-xs-12">
-						<div class="input-group mt30">
-							<label for="select">Type d'offre :</label>
-							<select id="" class="form-control selectpicker">
+						<div class="input-group">
+							<label for="select_type">Type d'offre :</label>
+							<select id="select_type" class="form-control selectpicker">
 								<option value="">1</option>
 								<option value="">2</option>
 								<option value="">3</option>
@@ -21,45 +21,47 @@
 						</div>
 					</div>
 					<div class="col-md-4 col-xs-12">
-						<div class="input-group mt30">
-							<label for="name">Date de début de l'offre :</label>
-							<input class="form-control datepicker" type="text" value="" name="date-begin" required="required" placeholder="Date de début">
+						<div class="input-group">
+							<label for="date_begin">Date de début de l'offre :</label>
+							<input id="date_begin" class="form-control datepicker" placeholder="Date de début" type="text" value="" name="date_begin" required="required">
 						</div>
 					</div>
 					<div class="col-md-4 col-xs-12">
-						<div class="input-group mt30">
-							<label for="name">Date de fin de l'offre :</label>
-							<input class="form-control datepicker" type="text" value="" name="date-end" required="required" placeholder="Date de fin">
+						<div class="input-group">
+							<label for="date_end">Date de fin de l'offre :</label>
+							<input id="date_end" class="form-control datepicker" placeholder="Date de fin" type="text" value="" name="date_end" required="required">
 						</div>
 					</div>
 				</div>
-				<div class="input-group mt30">
-					<label for="select">Points de ventes de l'offre :</label>
-					<select id="" class="form-control selectpicker" multiple>
+				<div class="input-group">
+					<label for="select_poi">Points de ventes de l'offre :</label>
+					<select id="select_poi" class="form-control selectpicker" multiple>
 						<option value="">1</option>
 						<option value="">2</option>
 						<option value="">3</option>
 						<option value="">4</option>
 					</select>
 				</div>
-				<div class="input-group mt30">
-					<label for="name">Description de l'offre :</label>
-					<textarea id="" class="form-control" type="text" value="" name="description" maxlength="100" required="required" placeholder="Description"></textarea>
+				<div class="input-group">
+					<label for="description">Description de l'offre :</label>
+					<textarea id="description" class="form-control" placeholder="Description" type="text" value="" name="description" maxlength="100" required="required"></textarea>
 				</div>
-				<div class="form-group mt30">
+				<div class="input-group">
+					<label for="description">Ajouter une photo :</label>
+					<input id="photo" type="file" name="photo"/>
+				</div>
+				<div class="form-group mt30 mb50">
 					<button id="btn-new-offer" class="btn btn-block btn-lg" type="submit">Poster mon offre</button>
-				</div>
 				</div>
 			</form>
 		</div>
 	</div>
+	
 	<script type="text/javascript">
 		// When the document is ready
 		$(document).ready(function () {
-			$('.datepicker').datepicker({
-				format: "dd/mm/yyyy"
-			});  
+			var dateToday = new Date(); 
+			$('.datepicker').datepicker({ minDate: dateToday, format: "dd/mm/yyyy" });
 		});
 	</script>
-	
 </div>
