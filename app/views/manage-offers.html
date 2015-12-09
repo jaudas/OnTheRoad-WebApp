@@ -1,7 +1,7 @@
 <div id="manage-offers">
 
 	<div class = "overview">
-		<div class="col-md-6 " id= "summary">
+		<div class="col-md-12 col-lg-6" id= "summary">
 
 			<h2> MES INFOS </h2>
 			<div class = "summary_offres">
@@ -18,7 +18,7 @@
 
 
 </div>
-<div class = class="col-md-6" >
+<div  class="col-md-12 col-lg-6" >
 
 	<h2> MES POINTS DE VENTE </h2>
 	<!--<map class = "map-container" ng-transclude class="short-map" center="map.center" zoom="map.zoom" options="map.options"> 
@@ -52,7 +52,7 @@
 		</div>
 	</div>
 	<div class="row" style="text-align:center;">
-		<div ng-repeat = "offre in offers.offers | limitTo:50 " >
+		<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" ng-repeat = "offre in offers.offers | limitTo:50 " >
 			<div class = "offre">
 				<div class = "desc_offre">
 					
@@ -83,7 +83,7 @@
 		</div>
 	</div>
 	<div class="row" style="text-align:center;">
-		<div ng-repeat = "POI in offers.POI | limitTo:50 " >
+		<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" ng-repeat = "POI in offers.POI | limitTo:50 " >
 			<div class = "offre">
 				<div class = "desc_offre">
 					
