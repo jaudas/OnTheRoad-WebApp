@@ -1,4 +1,4 @@
-OTR.controller("NewOfferCtrl", function($scole, $http){
+OTR.controller("NewOfferCtrl", function($scope, $http){
 
 
 

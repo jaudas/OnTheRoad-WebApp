@@ -217,6 +217,12 @@
 
 .overview h2{
     text-align: center;
+    width: 100%;
+
+}
+
+#account h2{
+    text-align: center;
 }
 
 #summary{
