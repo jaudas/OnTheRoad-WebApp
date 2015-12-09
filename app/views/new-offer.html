@@ -23,13 +23,13 @@
 					<div class="col-md-4 col-xs-12">
 						<div class="input-group">
 							<label for="date_begin">Date de début de l'offre :</label>
-							<input id="date_begin" class="form-control datepicker" placeholder="Date de début" type="text" value="" name="date_begin" required="required">
+							<input id="date_begin" class="form-control datepicker" placeholder="Date de début" type="datetime" value="" name="date_begin" required="required">
 						</div>
 					</div>
 					<div class="col-md-4 col-xs-12">
 						<div class="input-group">
 							<label for="date_end">Date de fin de l'offre :</label>
-							<input id="date_end" class="form-control datepicker" placeholder="Date de fin" type="text" value="" name="date_end" required="required">
+							<input id="date_end" class="form-control datepicker" placeholder="Date de fin" type="datetime" value="" name="date_end" required="required">
 						</div>
 					</div>
 				</div>
@@ -44,11 +44,11 @@
 				</div>
 				<div class="input-group">
 					<label for="description">Description de l'offre :</label>
-					<textarea id="description" class="form-control" placeholder="Description" type="text" value="" name="description" maxlength="100" required="required"></textarea>
+					<textarea id="description" class="form-control" placeholder="Description" type="text" value="" name="description" maxlength="100"></textarea>
 				</div>
 				<div class="input-group">
 					<label for="description">Ajouter une photo :</label>
-					<input id="photo" type="file" name="photo"/>
+					<input id="photo" class="" type="file" value="" name="photo"/>
 				</div>
 				<div class="form-group mt30 mb50">
 					<button id="btn-new-offer" class="btn btn-block btn-lg" type="submit">Poster mon offre</button>
@@ -60,8 +60,7 @@
 	<script type="text/javascript">
 		// When the document is ready
 		$(document).ready(function () {
-			var dateToday = new Date(); 
-			$('.datepicker').datepicker({ minDate: dateToday, format: "dd/mm/yyyy" });
+			$('.datepicker').datepicker({ minDate: 0, format: "dd/mm/yyyy" });
 		});
 	</script>
 </div>

@@ -8,27 +8,34 @@
 					<label for="name">Nom du point de vente :</label>
 					<input id="name" class="form-control" placeholder="Nom" type="text" value="" name="name" maxlength="20" required="required">
 				</div>
-				<div class="input-group">
-					<label for="address">Adresse du point de vente :</label>
-					<input id="address" class="form-control" placeholder="Adresse" type="text" value="" name="address" maxlength="50" required="required">
-				</div>
-				<div class="input-group">
-					<label for="postcode">Code postal du point de vente :</label>
-					<input id="postcode" class="form-control" placeholder="Code postal" type="text" value="" name="postcode" maxlength="20" required="required">
-				</div>
-				
-				<div class="input-group">
-					<label for="select">Type d'offre :</label>
-					<select id="" class="form-control selectpicker" multiple>
-						<option value="">1</option>
-						<option value="">2</option>
-						<option value="">3</option>
-						<option value="">4</option>
-					</select>
+				<label for="address" class="pt30">Adresse du point de vente :</label>
+				<div class="row">
+					<div class="col-md-4 col-xs-12 mt-30">
+						<div class="input-group">
+							<input id="number" class="form-control" placeholder="Numéro" type="text" value="" name="number" maxlength="10" required="required">
+						</div>
+					</div>
+					<div class="col-md-8 col-xs-12 mt-30">
+						<div class="input-group">
+							<input id="address" class="form-control" placeholder="Libellé" type="text" value="" name="address" maxlength="50" required="required">
+						</div>
+					</div>
+				</div>	
+				<div class="row">
+					<div class="col-md-4 col-xs-12 mt-50">
+						<div class="input-group">
+							<input id="postcode" class="form-control" placeholder="Code postal" type="text" value="" name="postcode" maxlength="10" required="required">
+						</div>
+					</div>
+					<div class="col-md-8 col-xs-12 mt-50">
+						<div class="input-group">
+							<input id="city" class="form-control" placeholder="Ville" type="text" value="" name="city" maxlength="50" required="required">
+						</div>
+					</div>
 				</div>
 				<div class="input-group">
 					<label for="name">Description de l'offre :</label>
-					<textarea id="" class="form-control" type="text" value="" name="description" maxlength="100" required="required" placeholder="Description"></textarea>
+					<textarea id="description" class="form-control" type="text" value="" name="description" maxlength="100" placeholder="Description"></textarea>
 				</div>
 				<div class="form-group mt30 mb50">
 					<button id="btn-new-offer" class="btn btn-block btn-lg" type="submit">Ajouter mon Point de vente</button>
