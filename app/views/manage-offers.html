@@ -1,110 +1,91 @@
 <div id="manage-offers">
-
-	<div class = "overview">
-		<div class="col-md-12 col-lg-6" id= "summary">
-
-			<h2> MES INFOS </h2>
-			<div class = "summary_offres">
-				4 offres en cours.
-			</br>
+	<div class="overview">
+		<div class="col-md-12 col-lg-6" id="summary">
+			<h2>MES INFOS</h2>
+			<div class="summary_offres">
+				4 offres en cours</br>
+			</div>
+			<div class="summary_POI">
+				1 point de vente</br>
+			</div>
+			80% de popularité</br>
 		</div>
+		<div class="col-md-12 col-lg-6">
+			<h2>MES POINTS DE VENTE</h2>
+			<!--<map class = "map-container" ng-transclude class="short-map" center="map.center" zoom="map.zoom" options="map.options"> 
+				<points coords="points.coords" options="points.options" events="points.events" decimals="points.decimals"></points>
+			</map>
 
-		<div class = "summary_POI">
-			1 point de vente.
-		</br>
-	</div>
+			{{points}}-->
 
-	80% de popularité</br>
+			<ui-gmap-google-map center='map.center' zoom='map.zoom'>
 
+				<ui-gmap-markers models="markers" coords="'self'" icon="'icon'">
+				</ui-gmap-markers>
 
-</div>
-<div  class="col-md-12 col-lg-6" >
-
-	<h2> MES POINTS DE VENTE </h2>
-	<!--<map class = "map-container" ng-transclude class="short-map" center="map.center" zoom="map.zoom" options="map.options"> 
-		<points coords="points.coords" options="points.options" events="points.events" decimals="points.decimals"></points>
-	</map>
-
-	{{points}}-->
-
-	<ui-gmap-google-map center='map.center' zoom='map.zoom'>
-
-        <ui-gmap-markers models="markers" coords="'self'" icon="'icon'">
-        </ui-gmap-markers>
-
-	</ui-gmap-google-map>
-
-
-</div>
-</div>
-
-
-
-<div id="offers">
-	<div class="row">
-		<h2>Mes Offres</h2>
-		<div class="create-new">
-			<a href ="#/new-offer"><i class="fa fa-plus"></i> Publier une Offre</a>
-			
-		</div>
-		<div class ="old-offers">
-			<a href ="#/old-offer"><i class="fa fa-hourglass-end"></i> Voir mes offres terminées</a>
+			</ui-gmap-google-map>
 		</div>
 	</div>
-	<div class="row" style="text-align:center;">
-		<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" ng-repeat = "offre in offers.offers | limitTo:50 " >
-			<div class = "offre">
-				<div class = "desc_offre">
-					
-					<div class = "titre_offre"> 
-						{{offre.promotion}}
+
+	<div id="offers">
+		<div class="row">
+			<h2>Mes Offres</h2>
+			<div class="create-new">
+				<a href="#/new-offer#new-offer"><i class="fa fa-plus"></i> Publier une Offre</a>
+			</div>
+			<div class="old-offers">
+				<a href="#/old-offer"><i class="fa fa-hourglass-end"></i> Voir mes Offres terminées</a>
+			</div>
+		</div>
+		<div class="row center">
+			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" ng-repeat="offre in offers.offers | limitTo:50">
+				<div class="offre">
+					<div class="desc_offre">
+						<div class="titre_offre"> 
+							{{offre.promotion}}
+						</div>
+						<div>
+							<p class="detail_offre">
+								{{offre.description}}</br>
+								valide jusqu'au : {{offre.date_fin}}
+							</p>
+						</div>
 					</div>
-					<div>
-						<p class="detail_offre"> {{offre.description}}
-						</br>valide jusqu'au : {{offre.date_fin}}
-					</p>
-				</div>
-
-			</div>
-			<div class = "share_offre">
-				 <i class="fa fa-facebook-square"></i> - <i class="fa fa-twitter"></i>
-			</div>
-
-		</div> 
-	</div>
-</div>
-</div>
-
-<div id="POI">
-	<div class="row">
-		<h2>Mes Points de vente</h2>
-		<div class="create-new">
-			<a href="#/new-POI"><i class="fa fa-plus"></i> Ajouter un Point de vente </a>
-		</div>
-	</div>
-	<div class="row" style="text-align:center;">
-		<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" ng-repeat = "POI in offers.POI | limitTo:50 " >
-			<div class = "offre">
-				<div class = "desc_offre">
-					
-					<div class = "titre_offre"> 
-						{{POI.type}}
+					<div class="share_offre">
+						<i class="fa fa-facebook-square"></i> - <i class="fa fa-twitter"></i>
 					</div>
-					<div>
-						<p class="detail_offre"> {{POI.description}}
-						</br> Lieu : {{POI.CP}}
-					</br> Valide jusqu'au : {{POI.date_fin}}
-				</p>
+				</div> 
 			</div>
-
 		</div>
-		<div class = "share_offre">
-			<i class="fa fa-facebook-square"></i> - <i class="fa fa-twitter"></i>
+	</div>
+
+	<div id="POI">
+		<div class="row">
+			<h2>Mes Points de vente</h2>
+			<div class="create-new">
+				<a href="#/new-POI#new-POI"><i class="fa fa-plus"></i> Ajouter un Point de vente</a>
+			</div>
 		</div>
-
-	</div> 
-</div>
-</div>
-</div>
-
+		<div class="row center">
+			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" ng-repeat="POI in offers.POI | limitTo:50">
+				<div class="offre">
+					<div class="desc_offre">
+						<div class="titre_offre"> 
+							{{POI.type}}
+						</div>
+						<div>
+							<p class="detail_offre">
+								{{POI.description}}</br>
+								Lieu : {{POI.CP}}</br>
+								Valide jusqu'au : {{POI.date_fin}}
+							</p>
+						</div>
+					</div>
+					<div class="share_offre">
+						<i class="fa fa-facebook-square"></i> - <i class="fa fa-twitter"></i>
+					</div>
+				</div> 
+			</div>
+		</div>
+	</div>
 </div>

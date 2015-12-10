@@ -9,39 +9,39 @@ OTR.config(function ($routeProvider) {
         controller: ''
       })
       .when('/signup', {
-        templateUrl: 'app/views/signup.html',
+        templateUrl: 'app/views/signup.html#signup',
         controller: 'SignupCtrl'
       })
       .when('/login', {
-        templateUrl: 'app/views/login.html',
+        templateUrl: 'app/views/login.html#login',
         controller: 'LoginCtrl'
       })
       .when('/terms-of-service',{
-        templateUrl : 'app/views/terms-of-service.html',
+        templateUrl : 'app/views/terms-of-service.html#TOS',
         controller : ''
       })
       .when('/blog',{
-        templateUrl : 'app/views/blog.html',
+        templateUrl : 'app/views/blog.html#blog',
         controller : ''
       })
       .when('/manage-offers',{
-        templateUrl : 'app/views/manage-offers.html',
+        templateUrl : 'app/views/manage-offers.html#manage-offers',
         controller : 'ManageOffersCtrl'
       })
       .when('/new-offer',{
-        templateUrl : 'app/views/new-offer.html',
+        templateUrl : 'app/views/new-offer.html#new-offer',
         controller : 'NewOfferCtrl'
       })
 	    .when('/new-POI',{
-        templateUrl : 'app/views/new-POI.html',
+        templateUrl : 'app/views/new-POI.html#new-POI',
         controller : 'NewPOICtrl'
       })
       .when('/myaccount',{
-            templateUrl : 'app/views/my-account.html',
+            templateUrl : 'app/views/my-account.html#account',
             controller : 'MyAccountCtrl'
           })
-      .otherwise({ //page d'erreur sympatique
-        templateUrl: 'app/views/404.html',
+      .otherwise({
+        templateUrl: 'app/views/404.html#404',
       });
 });
 
