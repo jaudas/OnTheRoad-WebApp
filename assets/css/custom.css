@@ -56,8 +56,30 @@
 	color: inherit;
 }
 
-.list{
+.list1{
 	margin-left: 50px;
+}
+
+.list2{
+	margin-left: 60px;
+}
+
+.list3{
+	margin-left: 70px;
+}
+
+.summary_offres{
+	text-align: center;
+	margin: auto;
+	font-size: 18px;
+	padding-top: 50px;
+}
+
+.summary_bis{
+	text-align: center;
+	margin: auto;
+	font-size: 18px;
+	padding-top: 10px;
 }
 
 .fl{
@@ -106,6 +128,10 @@
 
 .mr5{
 	margin-right: 5px;
+}
+
+.mr10{
+	margin-right: 10px;
 }
 
 .h150 {
@@ -221,7 +247,7 @@
 .titre_offre{
     text-transform: bold;
     font-size: 24px;
-    color: green;           
+    color: #76BF50;           
     font-weight: 800;
     overflow: ellipsis;
     padding: 5%;

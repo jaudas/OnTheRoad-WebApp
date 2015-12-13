@@ -6,7 +6,6 @@ OTR.controller("ManageOffersCtrl", function($scope, $http){
 	$scope.offers = [];
 	$scope.isLoading = false;
 
-
 	//Initialisation de la carte et des markers
 	$scope.map = {
 		center: { 
@@ -23,12 +22,9 @@ OTR.controller("ManageOffersCtrl", function($scope, $http){
 				keyboardShortcuts:false,
 			}
 		}
-
 	};
-
+	
 	$scope.markers = [];
-
-
 
 	/*$scope.points = {
 		coords :[],
@@ -45,8 +41,7 @@ OTR.controller("ManageOffersCtrl", function($scope, $http){
 		decimals: 3
 	};*/
 
-
-
+	
 	//Fonction permettant de récupérer les offres dans la base de données
 	function getOffers()
 	{
@@ -61,7 +56,6 @@ OTR.controller("ManageOffersCtrl", function($scope, $http){
 
 
 		/*	for (var iter = 0; iter < data.POI.length; iter++) {
-
 				markers.push(
 					{
 						data.POI[iter].id,
@@ -70,8 +64,6 @@ OTR.controller("ManageOffersCtrl", function($scope, $http){
 					        longitude: data.POI[iter].longitude
 					    }
 					});
-				
-
 			}
 			console.info($scope.markers);*/
 
@@ -82,10 +74,8 @@ OTR.controller("ManageOffersCtrl", function($scope, $http){
 			console.error('unable to load offers'+ status);
 			$scope.isLoading = false;
 		})
-
-
+		
 	}
-
 
 	getOffers();
 

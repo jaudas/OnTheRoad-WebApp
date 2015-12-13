@@ -3,12 +3,14 @@
 		<div class="col-md-12 col-lg-6" id="summary">
 			<h2>MES INFOS</h2>
 			<div class="summary_offres">
-				4 offres en cours</br>
+				<i class="fa fa-shopping-cart mr10"></i>{{offers.offers.length}} offre<span ng-if="offers.offers.length>'1'">s</span> en cours
 			</div>
-			<div class="summary_POI">
-				1 point de vente</br>
+			<div class="summary_bis">
+				<i class="fa fa-shopping-cart mr10"></i>{{offers.offers.length}} offre<span ng-if="offers.offers.length>'1'">s</span> postées au total
 			</div>
-			80% de popularité</br>
+			<div class="summary_bis">
+				<i class="fa fa-home mr10"></i>{{offers.POI.length}} point<span ng-if="offers.POI.length>'1'">s</span> de vente
+			</div>
 		</div>
 		<div class="col-md-12 col-lg-6">
 			<h2>MES POINTS DE VENTE</h2>

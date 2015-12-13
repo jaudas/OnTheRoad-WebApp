@@ -5,12 +5,12 @@
 		<div class="general-row">
 			<form id="loginForm" role="form">
 				<div class="input-group">
-					<label for="email">Adresse email :</label>
-					<input id="email" class="form-control" placeholder="Email" type="email">
+					<label for="mail">Adresse email :</label>
+					<input ng-model="mail" id="mail" class="form-control" name="mail" placeholder="Email" required="required" maxlength="50" type="email" value="">
 				</div>
 				<div class="input-group">
 					<label for="password">Mot de passe :</label>
-					<input id="password" class="form-control" placeholder="Mot de passe" type="password">
+					<input ng-model="password" id="password" class="form-control" name="password" placeholder="Mot de passe" required="required" maxlength="30" type="password" value="">
 				</div>
 				<div class="input-group">
 					<label><input type="checkbox"> Se souvenir de moi</label>
